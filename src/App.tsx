@@ -1,27 +1,27 @@
-import { Navbar } from '@/components/sections/Navbar';
-import { Hero } from '@/components/sections/Hero';
-import { Features } from '@/components/sections/Features';
-import { HowItWorks } from '@/components/sections/HowItWorks';
-import { Demo } from '@/components/sections/Demo';
-import { Gallery } from '@/components/sections/Gallery';
-import { CTA } from '@/components/sections/CTA';
-import { Footer } from '@/components/sections/Footer';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { Features } from './components/Features';
+import { HowItWorks } from './components/HowItWorks';
+import { Demo } from './components/Demo';
+import { Gallery } from './components/Gallery';
+import { WhyTourlyAI } from './components/WhyTourlyAI';
+import { CTA } from './components/CTA';
+import { Footer } from './components/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white dark:bg-surface-950 text-surface-900 dark:text-surface-100 font-sans">
       <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <Demo />
-        <Gallery />
-        <CTA />
-      </main>
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Demo />
+      <Gallery />
+      <WhyTourlyAI />
+      <CTA />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
-
-export default App;

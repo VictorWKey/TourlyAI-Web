@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)" rx="12"/>
+  <text x="640" y="350" font-family="system-ui,sans-serif" font-size="28" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="bold">Video Thumbnail</text>
+  <text x="640" y="385" font-family="system-ui,sans-serif" font-size="16" fill="rgba(255,255,255,0.6)" text-anchor="middle">Replace with real screenshot: video-thumbnail.png</text>
+</svg>

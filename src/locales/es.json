@@ -2,117 +2,144 @@
   "nav": {
     "features": "Características",
     "howItWorks": "Cómo Funciona",
-    "demo": "Demostración",
+    "demo": "Demo",
     "gallery": "Galería",
-    "download": "Descargar Gratis"
+    "download": "Descargar"
   },
   "hero": {
-    "badge": "Inteligencia de Opiniones con IA",
-    "title1": "Entiende a tus",
-    "titleHighlight": "clientes",
-    "title2": "como nunca antes",
-    "subtitle": "Convierte miles de opiniones en información clara y accionable en minutos — no semanas. TourlyAI lee, analiza y resume lo que tus clientes realmente piensan.",
-    "cta": "Descargar Gratis para Windows",
-    "ctaSecondary": "Ver Cómo Funciona",
-    "stat1Value": "7",
-    "stat1Label": "Fases de análisis",
-    "stat2Value": "∞",
-    "stat2Label": "Opiniones analizadas",
-    "stat3Value": "100%",
-    "stat3Label": "Privado y local"
+    "badge": "Inteligencia de Reseñas con IA",
+    "title1": "Entiende Tus",
+    "titleHighlight": "Reseñas",
+    "title2": "Como Nunca Antes",
+    "subtitle": "Convierte miles de reseñas de clientes en información clara y accionable. TourlyAI utiliza inteligencia artificial avanzada para detectar sentimientos, descubrir temas ocultos y generar resúmenes inteligentes — todo en tu propia computadora.",
+    "cta": "Descargar Gratis",
+    "ctaSecondary": "Ver Demo",
+    "stats": {
+      "reviews": "Reseñas Analizadas",
+      "accuracy": "Precisión",
+      "privacy": "100% Privado"
+    }
   },
   "features": {
-    "label": "Todo lo que necesitas",
-    "title": "Análisis poderoso, cero complejidad",
-    "subtitle": "TourlyAI gestiona todo el proceso de análisis por ti — desde opiniones en bruto hasta recomendaciones estratégicas — todo en una interfaz hermosa.",
-    "sentiment": {
-      "title": "Análisis de Sentimientos",
-      "description": "Sabe al instante cómo se sienten tus clientes. TourlyAI detecta sentimientos positivos, negativos y neutrales en cualquier idioma con precisión notable."
-    },
-    "topics": {
-      "title": "Descubrimiento de Temas",
-      "description": "Descubre de qué habla realmente la gente. Encuentra automáticamente temas ocultos y tendencias que importan a tu negocio."
-    },
-    "categories": {
-      "title": "Categorización Inteligente",
-      "description": "Cada opinión se etiqueta automáticamente con categorías relevantes — alojamiento, comida, atracciones, servicios — para filtrar y enfocarte."
-    },
-    "summaries": {
-      "title": "Resúmenes Inteligentes",
-      "description": "Obtén resúmenes claros y concisos de miles de opiniones en segundos. Deja de leer una por una — deja que la IA sintetice lo importante."
-    },
-    "visualizations": {
-      "title": "Dashboards Interactivos",
-      "description": "Gráficos interactivos, tendencias y reportes exportables que hacen que tus datos cuenten una historia. Presenta hallazgos a tu equipo con confianza."
-    },
-    "privacy": {
-      "title": "Privacidad Total",
-      "description": "Tus datos nunca salen de tu computadora. TourlyAI funciona completamente en tu máquina — sin subidas a la nube, sin acceso de terceros, control total."
+    "label": "Características",
+    "title": "Todo Lo Que Necesitas Para Entender Tus Reseñas",
+    "subtitle": "De texto crudo a información estratégica en minutos — sin necesidad de conocimientos técnicos.",
+    "items": {
+      "sentiment": {
+        "title": "Análisis de Sentimientos",
+        "description": "Sabe al instante cómo se sienten tus clientes. Nuestra IA lee cada reseña y clasifica las opiniones como positivas, negativas o neutrales — en múltiples idiomas."
+      },
+      "topics": {
+        "title": "Descubrimiento de Temas",
+        "description": "Descubre de qué hablan realmente tus clientes. Patrones ocultos y temas recurrentes emergen automáticamente de miles de reseñas."
+      },
+      "categories": {
+        "title": "Categorización Inteligente",
+        "description": "Las reseñas se etiquetan automáticamente con categorías relevantes — alojamiento, comida, atracciones, servicio — para que puedas filtrar y enfocarte en lo importante."
+      },
+      "summaries": {
+        "title": "Resúmenes Inteligentes",
+        "description": "Obtén resúmenes concisos y legibles que sintetizan los puntos clave de cientos o miles de reseñas en segundos."
+      },
+      "visualizations": {
+        "title": "Dashboards Hermosos",
+        "description": "Gráficos interactivos, líneas de tendencia y reportes exportables que facilitan presentar tus hallazgos a cualquier persona."
+      },
+      "privacy": {
+        "title": "Privacidad Total",
+        "description": "Todo se ejecuta localmente en tu computadora. Tus datos nunca salen de tu máquina — sin subidas a la nube, sin compartir datos, sin compromisos."
+      }
     }
   },
   "howItWorks": {
-    "label": "Simple y poderoso",
-    "title": "De opiniones en bruto a información accionable",
-    "subtitle": "Tres simples pasos. Eso es todo lo que necesitas para transformar opiniones dispersas en decisiones basadas en datos.",
-    "step1": {
-      "number": "01",
-      "title": "Sube tus opiniones",
-      "description": "Arrastra y suelta tu archivo CSV o Excel con opiniones. TourlyAI acepta datos en cualquier idioma y maneja datasets desordenados del mundo real."
-    },
-    "step2": {
-      "number": "02",
-      "title": "Deja que la IA trabaje",
-      "description": "Con un clic, el proceso de análisis recorre todas las fases — sentimiento, temas, categorías y resúmenes — automáticamente."
-    },
-    "step3": {
-      "number": "03",
-      "title": "Explora tus hallazgos",
-      "description": "Navega dashboards interactivos, lee resúmenes generados por IA y exporta reportes listos para presentaciones."
+    "label": "Cómo Funciona",
+    "title": "De Reseñas a Insights en 3 Simples Pasos",
+    "subtitle": "No necesitas conocimientos técnicos. Solo sube, analiza y descubre.",
+    "steps": {
+      "upload": {
+        "step": "Paso 1",
+        "title": "Sube Tus Reseñas",
+        "description": "Simplemente arrastra y suelta tu archivo CSV o Excel con reseñas. TourlyAI se encarga del resto — limpiando, formateando y preparando tus datos automáticamente."
+      },
+      "analyze": {
+        "step": "Paso 2",
+        "title": "Deja que la IA Trabaje",
+        "description": "Con un solo clic, el pipeline inteligente analiza cada reseña — detectando sentimientos, descubriendo temas, clasificando categorías y generando resúmenes."
+      },
+      "insights": {
+        "step": "Paso 3",
+        "title": "Descubre Tus Insights",
+        "description": "Explora dashboards interactivos, lee resúmenes inteligentes y exporta reportes hermosos listos para compartir con tu equipo."
+      }
     }
   },
   "demo": {
-    "label": "Míralo en acción",
-    "title": "Mira cómo TourlyAI transforma opiniones en información",
-    "subtitle": "Un vistazo rápido a cómo TourlyAI te lleva de datos en bruto a recomendaciones estratégicas en minutos.",
-    "playButton": "Ver la demostración",
-    "duration": "2 min"
+    "label": "Míralo en Acción",
+    "title": "Mira Cómo TourlyAI Transforma Reseñas en Inteligencia",
+    "subtitle": "Descubre lo fácil que es pasar de reseñas crudas a insights accionables en minutos.",
+    "videoAlt": "Video Demo de TourlyAI"
   },
   "gallery": {
-    "label": "La experiencia",
-    "title": "Diseñado para ser hermoso e intuitivo",
-    "subtitle": "Cada pantalla ha sido cuidadosamente creada para que el análisis complejo se sienta sencillo.",
+    "label": "Galería",
+    "title": "Una Experiencia Hermosa, Por Dentro y Por Fuera",
+    "subtitle": "Diseñada con cuidado en cada detalle — desde el asistente de configuración hasta el reporte final.",
     "images": {
       "dashboard": "Dashboard Interactivo",
       "pipeline": "Pipeline de Análisis",
+      "visualizations": "Visualizaciones Ricas",
       "sentiments": "Resultados de Sentimientos",
       "topics": "Descubrimiento de Temas",
-      "summaries": "Resúmenes con IA",
-      "visualizations": "Gráficos y Reportes"
+      "summaries": "Resúmenes Inteligentes",
+      "setup": "Asistente de Configuración",
+      "settings": "Configuración Flexible"
+    }
+  },
+  "testimonialSection": {
+    "label": "Por Qué TourlyAI",
+    "title": "Creado Para Quienes Se Preocupan Por Sus Reseñas",
+    "items": {
+      "simple": {
+        "title": "Increíblemente Simple",
+        "description": "Sin código, sin archivos de configuración, sin comandos de terminal. Sube tu archivo, haz clic en analizar y obtén resultados. Así de fácil."
+      },
+      "powerful": {
+        "title": "Extremadamente Potente",
+        "description": "Detrás de la interfaz simple hay IA de última generación que entiende contexto, matices y significado en múltiples idiomas."
+      },
+      "yours": {
+        "title": "Verdaderamente Tuyo",
+        "description": "Tus datos se quedan en tu computadora. Sin suscripciones, sin dependencias en la nube, sin costos ocultos. Descarga una vez, úsalo para siempre."
+      }
     }
   },
   "cta": {
-    "title": "¿Listo para entender a tus clientes?",
-    "subtitle": "Descarga TourlyAI gratis y comienza a convertir opiniones en información hoy. Sin cuenta, sin dependencia de la nube, sin límites.",
-    "button": "Descargar Gratis para Windows",
-    "note": "Gratis y código abierto · Windows 10/11 · Sin cuenta necesaria"
+    "title": "¿Listo Para Entender Tus Reseñas?",
+    "subtitle": "Descarga TourlyAI gratis y empieza a transformar reseñas en insights hoy.",
+    "button": "Descargar para Windows",
+    "note": "Gratis y código abierto. Sin necesidad de cuenta.",
+    "github": "Ver en GitHub"
   },
   "footer": {
-    "description": "Inteligencia de opiniones con IA. Entiende a tus clientes como nunca antes.",
+    "description": "Análisis de reseñas con IA que se ejecuta completamente en tu computadora. Código abierto y gratis para siempre.",
     "product": "Producto",
-    "productLinks": {
-      "features": "Características",
-      "howItWorks": "Cómo Funciona",
-      "download": "Descargar",
-      "changelog": "Historial de Cambios"
-    },
     "resources": "Recursos",
-    "resourceLinks": {
+    "legal": "Legal",
+    "links": {
+      "features": "Características",
+      "download": "Descargar",
+      "demo": "Demo",
       "github": "GitHub",
-      "documentation": "Documentación",
+      "docs": "Documentación",
+      "changelog": "Historial",
       "contributing": "Contribuir",
-      "privacy": "Política de Privacidad"
+      "privacy": "Política de Privacidad",
+      "license": "Licencia"
     },
-    "copyright": "© 2025-2026 TourlyAI. Código abierto bajo licencia MIT.",
+    "copyright": "© 2025–2026 TourlyAI. Código abierto bajo licencia MIT.",
     "madeWith": "Hecho con ❤️ por"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro"
   }
 }
