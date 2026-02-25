@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "demo": "Demostración",
+    "gallery": "Galería",
+    "download": "Descargar Gratis"
+  },
+  "hero": {
+    "badge": "Inteligencia de Opiniones con IA",
+    "title1": "Entiende a tus",
+    "titleHighlight": "clientes",
+    "title2": "como nunca antes",
+    "subtitle": "Convierte miles de opiniones en información clara y accionable en minutos — no semanas. TourlyAI lee, analiza y resume lo que tus clientes realmente piensan.",
+    "cta": "Descargar Gratis para Windows",
+    "ctaSecondary": "Ver Cómo Funciona",
+    "stat1Value": "7",
+    "stat1Label": "Fases de análisis",
+    "stat2Value": "∞",
+    "stat2Label": "Opiniones analizadas",
+    "stat3Value": "100%",
+    "stat3Label": "Privado y local"
+  },
+  "features": {
+    "label": "Todo lo que necesitas",
+    "title": "Análisis poderoso, cero complejidad",
+    "subtitle": "TourlyAI gestiona todo el proceso de análisis por ti — desde opiniones en bruto hasta recomendaciones estratégicas — todo en una interfaz hermosa.",
+    "sentiment": {
+      "title": "Análisis de Sentimientos",
+      "description": "Sabe al instante cómo se sienten tus clientes. TourlyAI detecta sentimientos positivos, negativos y neutrales en cualquier idioma con precisión notable."
+    },
+    "topics": {
+      "title": "Descubrimiento de Temas",
+      "description": "Descubre de qué habla realmente la gente. Encuentra automáticamente temas ocultos y tendencias que importan a tu negocio."
+    },
+    "categories": {
+      "title": "Categorización Inteligente",
+      "description": "Cada opinión se etiqueta automáticamente con categorías relevantes — alojamiento, comida, atracciones, servicios — para filtrar y enfocarte."
+    },
+    "summaries": {
+      "title": "Resúmenes Inteligentes",
+      "description": "Obtén resúmenes claros y concisos de miles de opiniones en segundos. Deja de leer una por una — deja que la IA sintetice lo importante."
+    },
+    "visualizations": {
+      "title": "Dashboards Interactivos",
+      "description": "Gráficos interactivos, tendencias y reportes exportables que hacen que tus datos cuenten una historia. Presenta hallazgos a tu equipo con confianza."
+    },
+    "privacy": {
+      "title": "Privacidad Total",
+      "description": "Tus datos nunca salen de tu computadora. TourlyAI funciona completamente en tu máquina — sin subidas a la nube, sin acceso de terceros, control total."
+    }
+  },
+  "howItWorks": {
+    "label": "Simple y poderoso",
+    "title": "De opiniones en bruto a información accionable",
+    "subtitle": "Tres simples pasos. Eso es todo lo que necesitas para transformar opiniones dispersas en decisiones basadas en datos.",
+    "step1": {
+      "number": "01",
+      "title": "Sube tus opiniones",
+      "description": "Arrastra y suelta tu archivo CSV o Excel con opiniones. TourlyAI acepta datos en cualquier idioma y maneja datasets desordenados del mundo real."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Deja que la IA trabaje",
+      "description": "Con un clic, el proceso de análisis recorre todas las fases — sentimiento, temas, categorías y resúmenes — automáticamente."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Explora tus hallazgos",
+      "description": "Navega dashboards interactivos, lee resúmenes generados por IA y exporta reportes listos para presentaciones."
+    }
+  },
+  "demo": {
+    "label": "Míralo en acción",
+    "title": "Mira cómo TourlyAI transforma opiniones en información",
+    "subtitle": "Un vistazo rápido a cómo TourlyAI te lleva de datos en bruto a recomendaciones estratégicas en minutos.",
+    "playButton": "Ver la demostración",
+    "duration": "2 min"
+  },
+  "gallery": {
+    "label": "La experiencia",
+    "title": "Diseñado para ser hermoso e intuitivo",
+    "subtitle": "Cada pantalla ha sido cuidadosamente creada para que el análisis complejo se sienta sencillo.",
+    "images": {
+      "dashboard": "Dashboard Interactivo",
+      "pipeline": "Pipeline de Análisis",
+      "sentiments": "Resultados de Sentimientos",
+      "topics": "Descubrimiento de Temas",
+      "summaries": "Resúmenes con IA",
+      "visualizations": "Gráficos y Reportes"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para entender a tus clientes?",
+    "subtitle": "Descarga TourlyAI gratis y comienza a convertir opiniones en información hoy. Sin cuenta, sin dependencia de la nube, sin límites.",
+    "button": "Descargar Gratis para Windows",
+    "note": "Gratis y código abierto · Windows 10/11 · Sin cuenta necesaria"
+  },
+  "footer": {
+    "description": "Inteligencia de opiniones con IA. Entiende a tus clientes como nunca antes.",
+    "product": "Producto",
+    "productLinks": {
+      "features": "Características",
+      "howItWorks": "Cómo Funciona",
+      "download": "Descargar",
+      "changelog": "Historial de Cambios"
+    },
+    "resources": "Recursos",
+    "resourceLinks": {
+      "github": "GitHub",
+      "documentation": "Documentación",
+      "contributing": "Contribuir",
+      "privacy": "Política de Privacidad"
+    },
+    "copyright": "© 2025-2026 TourlyAI. Código abierto bajo licencia MIT.",
+    "madeWith": "Hecho con ❤️ por"
+  }
+}

@@ -1,11 +1,9 @@
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { Features } from '@/components/sections/Features';
-import { Pipeline } from '@/components/sections/Pipeline';
+import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Demo } from '@/components/sections/Demo';
-import { Video } from '@/components/sections/Video';
-import { TechStack } from '@/components/sections/TechStack';
-import { Stats } from '@/components/sections/Stats';
+import { Gallery } from '@/components/sections/Gallery';
 import { CTA } from '@/components/sections/CTA';
 import { Footer } from '@/components/sections/Footer';
 
@@ -13,14 +11,14 @@ function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
-      <Features />
-      <Pipeline />
-      <Demo />
-      <Video />
-      <TechStack />
-      <Stats />
-      <CTA />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Demo />
+        <Gallery />
+        <CTA />
+      </main>
       <Footer />
     </div>
   );

@@ -1,102 +1,95 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { Play, Clock } from 'lucide-react';
+import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { SectionBadge } from '@/components/ui/SectionBadge';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import {
-  LayoutDashboard,
-  GitBranch,
-  BarChart3,
-  Settings,
-  Search,
-  MessageSquare,
-} from 'lucide-react';
 
-const tabs = [
-  { key: 'dashboard', icon: LayoutDashboard, image: '/images/screenshot-dashboard.png' },
-  { key: 'pipelineView', icon: GitBranch, image: '/images/screenshot-pipeline.png' },
-  { key: 'visualizationsView', icon: BarChart3, image: '/images/screenshot-visualizations.png' },
-  { key: 'setupWizard', icon: Settings, image: '/images/screenshot-setup.png' },
-  { key: 'results', icon: Search, image: '/images/screenshot-results.png' },
-  { key: 'reviews', icon: MessageSquare, image: '/images/screenshot-reviews.png' },
-] as const;
+import videoPoster from '@/assets/video/demo-poster.png';
 
 export function Demo() {
   const { t } = useTranslation();
-  const [active, setActive] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+    videoRef.current?.play();
+  };
 
   return (
-    <section id="demo" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge={<SectionBadge>{t('demo.badge')}</SectionBadge>}
-          title={t('demo.title')}
-          highlight={t('demo.titleHighlight')}
-          subtitle={t('demo.subtitle')}
-        />
+    <section id="demo" className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Background accent */}
+      <div className="pointer-events-none absolute inset-0 bg-linear-to-b from-transparent via-primary-50/50 to-transparent dark:via-primary-950/20" />
 
-        {/* Tab bar */}
-        <div className="mb-8 flex flex-wrap justify-center gap-2">
-          {tabs.map((tab, i) => {
-            const Icon = tab.icon;
-            return (
-              <button
-                key={tab.key}
-                onClick={() => setActive(i)}
-                className={`inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-all duration-200 ${
-                  active === i
-                    ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/25'
-                    : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
-                }`}
-              >
-                <Icon className="h-4 w-4" />
-                <span className="hidden sm:inline">{t(`demo.${tab.key}`)}</span>
-              </button>
-            );
-          })}
-        </div>
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="mx-auto max-w-2xl text-center">
+          <SectionBadge text={t('demo.label')} />
+          <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+            {t('demo.title')}
+          </h2>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+            {t('demo.subtitle')}
+          </p>
+        </AnimatedSection>
 
-        {/* Screenshot display */}
-        <motion.div
-          className="relative mx-auto max-w-5xl"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          {/* Window chrome */}
-          <div className="rounded-t-xl bg-gray-200 dark:bg-gray-800 px-4 py-3 flex items-center gap-2">
-            <div className="flex gap-1.5">
-              <div className="h-3 w-3 rounded-full bg-red-400" />
-              <div className="h-3 w-3 rounded-full bg-yellow-400" />
-              <div className="h-3 w-3 rounded-full bg-green-400" />
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="rounded-md bg-gray-300 dark:bg-gray-700 px-8 py-1 text-xs text-gray-500 dark:text-gray-400">
-                TourlyAI
+        <AnimatedSection delay={0.2} className="mt-14">
+          <div className="relative mx-auto max-w-5xl">
+            {/* Glow */}
+            <div className="absolute -inset-6 rounded-3xl bg-linear-to-r from-primary-500/20 via-accent-500/20 to-primary-500/20 blur-3xl" />
+
+            {/* Video container */}
+            <div className="relative overflow-hidden rounded-2xl border border-gray-200/50 bg-gray-900 shadow-2xl dark:border-gray-700/50">
+              {/* Window chrome */}
+              <div className="flex items-center gap-2 border-b border-gray-700/50 bg-gray-800/80 px-4 py-3">
+                <div className="h-3 w-3 rounded-full bg-red-400" />
+                <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                <div className="h-3 w-3 rounded-full bg-green-400" />
+                <span className="ml-4 text-xs text-gray-400">TourlyAI — Demo</span>
+              </div>
+
+              {/* Video area */}
+              <div className="relative aspect-video">
+                <video
+                  ref={videoRef}
+                  poster={videoPoster}
+                  className="h-full w-full object-cover"
+                  controls={isPlaying}
+                  playsInline
+                >
+                  <source src="/assets/video/demo.mp4" type="video/mp4" />
+                </video>
+
+                {/* Play overlay */}
+                {!isPlaying && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 backdrop-blur-[2px]"
+                  >
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={handlePlay}
+                      className="group flex h-20 w-20 items-center justify-center rounded-full bg-white/90 text-primary-600 shadow-2xl transition-all hover:bg-white cursor-pointer"
+                    >
+                      <Play className="h-8 w-8 translate-x-0.5 fill-current" />
+                    </motion.button>
+                    <div className="mt-6 flex items-center gap-3">
+                      <span className="text-lg font-semibold text-white">
+                        {t('demo.playButton')}
+                      </span>
+                      <span className="flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-sm text-white/80 backdrop-blur-sm">
+                        <Clock className="h-3.5 w-3.5" />
+                        {t('demo.duration')}
+                      </span>
+                    </div>
+                  </motion.div>
+                )}
               </div>
             </div>
           </div>
-
-          {/* Screenshot area */}
-          <div className="relative overflow-hidden rounded-b-xl bg-gray-100 dark:bg-gray-900 border border-t-0 border-gray-200 dark:border-gray-800">
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={active}
-                src={tabs[active].image}
-                alt={t(`demo.${tabs[active].key}`)}
-                className="w-full"
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              />
-            </AnimatePresence>
-          </div>
-
-          {/* Shadow glow */}
-          <div className="absolute -inset-4 -z-10 bg-gradient-to-r from-primary-500/10 via-accent-500/10 to-primary-500/10 rounded-2xl blur-2xl" />
-        </motion.div>
+        </AnimatedSection>
       </div>
     </section>
   );

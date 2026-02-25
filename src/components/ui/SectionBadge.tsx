@@ -1,20 +1,12 @@
-import { type ReactNode } from 'react';
-import { motion } from 'framer-motion';
-
 interface SectionBadgeProps {
-  children: ReactNode;
+  text: string;
 }
 
-export function SectionBadge({ children }: SectionBadgeProps) {
+export function SectionBadge({ text }: SectionBadgeProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="inline-flex items-center gap-2 rounded-full border border-primary-200 dark:border-primary-800 bg-primary-50 dark:bg-primary-950/50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:text-primary-300 mb-4"
-    >
-      {children}
-    </motion.div>
+    <span className="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-900/30 dark:text-primary-300">
+      <span className="h-1.5 w-1.5 rounded-full bg-primary-500 animate-pulse" />
+      {text}
+    </span>
   );
 }

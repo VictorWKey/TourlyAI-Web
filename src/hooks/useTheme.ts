@@ -4,8 +4,9 @@ type Theme = 'light' | 'dark';
 
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {
-    const saved = localStorage.getItem('tourlyai-theme') as Theme | null;
-    if (saved) return saved;
+    if (typeof window === 'undefined') return 'light';
+    const stored = localStorage.getItem('theme') as Theme | null;
+    if (stored) return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
 
@@ -16,12 +17,12 @@ export function useTheme() {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem('tourlyai-theme', theme);
+    localStorage.setItem('theme', theme);
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
     setThemeState((prev) => (prev === 'dark' ? 'light' : 'dark'));
   }, []);
 
-  return { theme, toggleTheme, isDark: theme === 'dark' };
+  return { theme, toggleTheme };
 }

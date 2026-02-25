@@ -1,12 +1,9 @@
-@import 'tailwindcss';
-@import '@fontsource-variable/inter';
-@import '@fontsource-variable/jetbrains-mono';
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
+/* ── Design tokens ─────────────────────────────────────────── */
 @theme {
-  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
 
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
@@ -18,87 +15,121 @@
   --color-primary-700: #1d4ed8;
   --color-primary-800: #1e40af;
   --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
 
   --color-accent-400: #a78bfa;
   --color-accent-500: #8b5cf6;
   --color-accent-600: #7c3aed;
 }
 
-/* Smooth scroll */
+/* ── Base ───────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Dark mode transitions ─────────────────────────────────── */
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* ── Selection ─────────────────────────────────────────────── */
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-900);
+}
+
+.dark ::selection {
+  background-color: var(--color-primary-800);
+  color: var(--color-primary-100);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
-  border-radius: 4px;
+  border-radius: 9999px;
 }
+
 .dark ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #334155;
 }
 
-/* Glass morphism utility */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-.dark .glass {
-  background: rgba(15, 23, 42, 0.7);
-}
-
-/* Gradient text */
+/* ── Gradient text utility ─────────────────────────────────── */
 .gradient-text {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-accent-500));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Animated gradient background */
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient-shift 8s ease infinite;
+/* ── Glass card ────────────────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Glow effects */
-.glow-blue {
-  box-shadow: 0 0 40px rgba(37, 99, 235, 0.15);
-}
-.dark .glow-blue {
-  box-shadow: 0 0 40px rgba(37, 99, 235, 0.25);
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Screenshot frame */
-.screenshot-frame {
+/* ── Hero gradient background ──────────────────────────────── */
+.hero-gradient {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
+              radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.08), transparent);
+}
+
+.dark .hero-gradient {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.2), transparent),
+              radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.12), transparent);
+}
+
+/* ── Section gradient ──────────────────────────────────────── */
+.section-gradient {
+  background: linear-gradient(180deg, var(--color-primary-50) 0%, white 100%);
+}
+
+.dark .section-gradient {
+  background: linear-gradient(180deg, rgba(30, 58, 138, 0.08) 0%, rgb(3, 7, 18) 100%);
+}
+
+/* ── Glow effect ───────────────────────────────────────────── */
+.glow {
+  box-shadow: 0 0 60px -12px rgba(59, 130, 246, 0.3);
+}
+
+.dark .glow {
+  box-shadow: 0 0 60px -12px rgba(59, 130, 246, 0.2);
+}
+
+/* ── Screenshot mockup ─────────────────────────────────────── */
+.app-mockup {
   border-radius: 12px;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05),
-    0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-.dark .screenshot-frame {
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15),
+              0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-/* Dot grid pattern */
-.dot-pattern {
-  background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-.dark .dot-pattern {
-  background-image: radial-gradient(circle, #334155 1px, transparent 1px);
+.dark .app-mockup {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.05);
 }

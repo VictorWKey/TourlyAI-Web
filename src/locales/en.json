@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "demo": "See It in Action",
+    "gallery": "Gallery",
+    "download": "Download Free"
+  },
+  "hero": {
+    "badge": "AI-Powered Review Intelligence",
+    "title1": "Understand your",
+    "titleHighlight": "customers",
+    "title2": "like never before",
+    "subtitle": "Turn thousands of reviews into clear, actionable insights in minutes — not weeks. TourlyAI reads, analyzes, and summarizes what your customers really think.",
+    "cta": "Download Free for Windows",
+    "ctaSecondary": "See How It Works",
+    "stat1Value": "7",
+    "stat1Label": "Analysis phases",
+    "stat2Value": "∞",
+    "stat2Label": "Reviews analyzed",
+    "stat3Value": "100%",
+    "stat3Label": "Private & local"
+  },
+  "features": {
+    "label": "Everything you need",
+    "title": "Powerful insights, zero complexity",
+    "subtitle": "TourlyAI handles the entire analysis pipeline for you — from raw reviews to strategic recommendations — all in one beautiful interface.",
+    "sentiment": {
+      "title": "Sentiment Analysis",
+      "description": "Instantly know how customers feel. TourlyAI detects positive, negative, and neutral sentiments across any language with remarkable accuracy."
+    },
+    "topics": {
+      "title": "Topic Discovery",
+      "description": "Uncover what people are really talking about. Automatically discover hidden themes and topics that matter most to your business."
+    },
+    "categories": {
+      "title": "Smart Categorization",
+      "description": "Every review is automatically tagged with relevant categories — accommodations, food, attractions, services — so you can filter and focus."
+    },
+    "summaries": {
+      "title": "Intelligent Summaries",
+      "description": "Get clear, concise summaries of thousands of reviews in seconds. Stop reading one by one — let AI synthesize the key takeaways for you."
+    },
+    "visualizations": {
+      "title": "Beautiful Dashboards",
+      "description": "Interactive charts, trend graphs, and exportable reports that make your data tell a story. Present insights to your team with confidence."
+    },
+    "privacy": {
+      "title": "Complete Privacy",
+      "description": "Your data never leaves your computer. TourlyAI runs entirely on your machine — no cloud uploads, no third-party access, total control."
+    }
+  },
+  "howItWorks": {
+    "label": "Simple & powerful",
+    "title": "From raw reviews to actionable insights",
+    "subtitle": "Three simple steps. That's all it takes to transform scattered opinions into clear, data-driven decisions.",
+    "step1": {
+      "number": "01",
+      "title": "Upload your reviews",
+      "description": "Drag and drop your CSV or Excel file with reviews. TourlyAI accepts data in any language and handles messy, real-world datasets."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Let AI do the work",
+      "description": "With one click, the analysis pipeline runs through all phases — sentiment, topics, categories, and summaries — automatically."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Explore your insights",
+      "description": "Browse interactive dashboards, read AI-generated summaries, and export beautiful reports ready for presentations."
+    }
+  },
+  "demo": {
+    "label": "See it in action",
+    "title": "Watch TourlyAI transform reviews into insights",
+    "subtitle": "A quick look at how TourlyAI takes you from raw data to strategic recommendations in minutes.",
+    "playButton": "Watch the demo",
+    "duration": "2 min"
+  },
+  "gallery": {
+    "label": "The experience",
+    "title": "Designed to be beautiful and intuitive",
+    "subtitle": "Every screen has been carefully crafted to make complex analysis feel effortless.",
+    "images": {
+      "dashboard": "Interactive Dashboard",
+      "pipeline": "Analysis Pipeline",
+      "sentiments": "Sentiment Results",
+      "topics": "Topic Discovery",
+      "summaries": "AI Summaries",
+      "visualizations": "Charts & Reports"
+    }
+  },
+  "cta": {
+    "title": "Ready to understand your customers?",
+    "subtitle": "Download TourlyAI free and start turning reviews into insights today. No account required, no cloud dependency, no limits.",
+    "button": "Download Free for Windows",
+    "note": "Free & open source · Windows 10/11 · No account needed"
+  },
+  "footer": {
+    "description": "AI-powered review intelligence. Understand your customers like never before.",
+    "product": "Product",
+    "productLinks": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "download": "Download",
+      "changelog": "Changelog"
+    },
+    "resources": "Resources",
+    "resourceLinks": {
+      "github": "GitHub",
+      "documentation": "Documentation",
+      "contributing": "Contributing",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "© 2025-2026 TourlyAI. Open source under MIT license.",
+    "madeWith": "Made with ❤️ by"
+  }
+}

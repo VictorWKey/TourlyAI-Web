@@ -1,61 +1,56 @@
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Download, Github, ExternalLink } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Download, Sparkles } from 'lucide-react';
+import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
 export function CTA() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-linear-to-br from-primary-600 via-primary-700 to-primary-900" />
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiLz48L3N2Zz4=')] opacity-40" />
+    <section className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Background decoration */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-0 bg-linear-to-br from-primary-600 via-primary-700 to-accent-700" />
+        <div className="absolute top-0 right-0 h-full w-1/2 bg-linear-to-l from-accent-600/30 to-transparent" />
+        <div className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute -bottom-40 -right-40 h-100 w-100 rounded-full bg-accent-500/20 blur-3xl" />
+      </div>
 
-      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-            {t('cta.title')}{' '}
-            <span className="text-primary-200">{t('cta.titleHighlight')}</span>
+      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+        <AnimatedSection>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+            className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm"
+          >
+            <Sparkles className="h-8 w-8 text-white" />
+          </motion.div>
+
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            {t('cta.title')}
           </h2>
-          <p className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
             {t('cta.subtitle')}
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <motion.a
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
+          <div className="mt-10">
+            <a
               href="https://github.com/victorwkey/TourlyAI/releases/latest"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-sm font-bold text-primary-700 shadow-xl shadow-black/20 hover:bg-primary-50 transition-colors"
+              className="group inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 text-lg font-bold text-primary-700 shadow-2xl shadow-black/20 transition-all hover:-translate-y-1 hover:shadow-3xl cursor-pointer"
             >
-              <Download className="h-5 w-5" />
-              {t('cta.download')}
-              <ExternalLink className="h-4 w-4 opacity-50" />
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              href="https://github.com/victorwkey/TourlyAI"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-white/30 px-8 py-4 text-sm font-bold text-white hover:bg-white/10 transition-colors"
-            >
-              <Github className="h-5 w-5" />
-              {t('cta.github')}
-            </motion.a>
+              <Download className="h-5 w-5 transition-transform group-hover:-translate-y-0.5" />
+              {t('cta.button')}
+            </a>
           </div>
 
-          <p className="mt-6 text-sm text-primary-200/80">
+          <p className="mt-6 text-sm text-white/60">
             {t('cta.note')}
           </p>
-        </motion.div>
+        </AnimatedSection>
       </div>
     </section>
   );
