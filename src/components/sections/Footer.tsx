@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Github, Twitter } from 'lucide-react';
+import { Github } from 'lucide-react';
 import type { Theme } from '@/App';
 
 interface FooterProps {
@@ -35,15 +35,7 @@ export default function Footer({ theme }: FooterProps) {
               >
                 <Github className="w-5 h-5" />
               </a>
-              <a
-                href="https://twitter.com/victorwkey"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-xl text-surface-400 hover:text-surface-600 dark:hover:text-surface-200 bg-surface-100 dark:bg-surface-800 hover:bg-surface-200 dark:hover:bg-surface-700 transition-all"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
+
             </div>
           </div>
 
