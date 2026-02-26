@@ -12,7 +12,6 @@ interface NavbarProps {
 const navLinks = [
   { key: 'features', href: '#features' },
   { key: 'howItWorks', href: '#how-it-works' },
-  { key: 'dashboard', href: '#dashboard' },
   { key: 'privacy', href: '#privacy' },
   { key: 'faq', href: '#faq' },
 ];

@@ -77,7 +77,7 @@ export default function Privacy() {
               initial={{ opacity: 0, scale: 0 }}
               animate={isVisible ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.8, duration: 0.5, type: 'spring' }}
-              className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-emerald-500 shadow-xl shadow-emerald-500/30 flex items-center justify-center"
+              className="hidden sm:flex absolute -top-4 -right-4 w-16 h-16 rounded-2xl bg-emerald-500 shadow-xl shadow-emerald-500/30 items-center justify-center"
             >
               <Shield className="w-8 h-8 text-white" />
             </motion.div>
