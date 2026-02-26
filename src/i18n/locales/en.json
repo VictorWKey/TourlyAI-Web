@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "dashboard": "Dashboard",
+    "privacy": "Privacy",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "AI-Powered Review Analysis",
+    "title1": "Turn Reviews Into",
+    "titleHighlight": "Strategic Insights",
+    "subtitle": "The intelligent desktop app that analyzes tourism reviews using AI — revealing sentiments, trends, and actionable recommendations to transform your business.",
+    "cta": "Download Free",
+    "ctaSecondary": "Watch Demo",
+    "stats": {
+      "reviews": "Reviews Analyzed",
+      "categories": "Tourism Categories",
+      "languages": "Review Languages",
+      "phases": "Analysis Phases"
+    }
+  },
+  "features": {
+    "label": "Powerful Features",
+    "title": "Everything You Need to Understand Your Reviews",
+    "subtitle": "From raw reviews to professional reports — TourlyAI handles the entire analysis process with one click.",
+    "sentiment": {
+      "title": "Sentiment Analysis",
+      "description": "Automatically classify every review as positive, negative, or neutral. Understand what your guests truly feel about their experience."
+    },
+    "categories": {
+      "title": "Category Detection",
+      "description": "Identify what guests talk about — accommodation, gastronomy, transportation, nature, events, and 7 more tourism categories."
+    },
+    "topics": {
+      "title": "Topic Discovery",
+      "description": "AI-powered topic modeling reveals hidden themes and recurring patterns across thousands of reviews."
+    },
+    "summaries": {
+      "title": "Intelligent Summaries",
+      "description": "Get structured, AI-generated summaries per category with key findings and actionable takeaways."
+    },
+    "insights": {
+      "title": "Strategic Insights",
+      "description": "Receive data-driven strategic recommendations with strengths to leverage and opportunity areas to improve."
+    },
+    "reports": {
+      "title": "Professional Reports",
+      "description": "Generate polished PDF reports with 4 templates, 17 customizable sections, and all your charts and insights included."
+    },
+    "visualizations": {
+      "title": "Interactive Dashboard",
+      "description": "Explore 34+ chart types including sentiment distributions, temporal trends, word clouds, radar charts, and cross-analysis views."
+    },
+    "reviews": {
+      "title": "Review Explorer",
+      "description": "Browse individual reviews with powerful filters by sentiment, category, topic, subjectivity, and rating. Search and sort instantly."
+    }
+  },
+  "howItWorks": {
+    "label": "Simple Process",
+    "title": "From Data to Decisions in 3 Steps",
+    "subtitle": "No technical knowledge required. TourlyAI guides you through the entire process.",
+    "step1": {
+      "title": "Upload Your Reviews",
+      "description": "Drag & drop a CSV file with your reviews. TourlyAI automatically maps your columns and validates the data."
+    },
+    "step2": {
+      "title": "Run the Analysis",
+      "description": "Click 'Run All' and watch TourlyAI process your data through 9 analysis phases — from cleaning to strategic insights."
+    },
+    "step3": {
+      "title": "Explore & Export",
+      "description": "Browse interactive dashboards, read AI summaries, explore individual reviews, and generate professional PDF reports."
+    }
+  },
+  "dashboard": {
+    "label": "Visual Intelligence",
+    "title": "A Dashboard That Tells the Story",
+    "subtitle": "34+ interactive chart types transform raw data into clear, actionable visual narratives.",
+    "charts": {
+      "sentiment": "Sentiment Distribution",
+      "temporal": "Temporal Trends",
+      "categories": "Category Analysis",
+      "radar": "360° Radar Overview",
+      "wordcloud": "Word Clouds",
+      "cross": "Cross-Analysis"
+    }
+  },
+  "privacy": {
+    "label": "Your Data, Your Rules",
+    "title": "100% Private. 100% Local.",
+    "subtitle": "TourlyAI runs entirely on your computer. Your reviews never leave your machine — no cloud uploads, no third-party access, no data sharing.",
+    "features": {
+      "local": {
+        "title": "Local AI Processing",
+        "description": "Run powerful AI models directly on your computer using Ollama. No internet required after setup."
+      },
+      "noCloud": {
+        "title": "No Cloud Required",
+        "description": "Your data stays on your hard drive. Nothing is uploaded to external servers."
+      },
+      "flexible": {
+        "title": "Flexible AI Options",
+        "description": "Choose between local AI (free & offline), cloud API (faster), or basic analysis without AI — you're in control."
+      },
+      "open": {
+        "title": "Open Source & Transparent",
+        "description": "MIT licensed. Review the code, verify the privacy claims, and customize to your needs."
+      }
+    }
+  },
+  "video": {
+    "label": "See It In Action",
+    "title": "Watch TourlyAI Transform Your Reviews",
+    "subtitle": "A quick walkthrough showing how to go from raw review data to strategic insights in minutes.",
+    "play": "Play Video"
+  },
+  "faq": {
+    "label": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "items": {
+      "q1": {
+        "question": "What is TourlyAI?",
+        "answer": "TourlyAI is a desktop application that uses Artificial Intelligence and Natural Language Processing to analyze reviews from tourism destinations. It extracts sentiments, identifies categories and topics, generates intelligent summaries, and provides strategic recommendations."
+      },
+      "q2": {
+        "question": "Who is it designed for?",
+        "answer": "Tourism professionals, hospitality managers, destination marketing organizations, tour operators, hotel managers, and anyone who needs to understand what guests are saying about their tourism experience."
+      },
+      "q3": {
+        "question": "Is my data safe?",
+        "answer": "Absolutely. TourlyAI processes everything locally on your computer. Your reviews never leave your machine. You can use the fully offline local AI mode for maximum privacy."
+      },
+      "q4": {
+        "question": "Do I need technical knowledge?",
+        "answer": "Not at all. TourlyAI includes a setup wizard that handles everything automatically. Just upload your CSV file, click 'Run Analysis', and explore the results."
+      },
+      "q5": {
+        "question": "What languages does it support?",
+        "answer": "The interface is available in English and Spanish. The AI sentiment model supports reviews in English, Spanish, French, German, Italian, Portuguese, and more."
+      },
+      "q6": {
+        "question": "Is it free?",
+        "answer": "Yes, TourlyAI is free and open-source under the MIT license. You can download, use, and modify it without any cost."
+      },
+      "q7": {
+        "question": "What are the system requirements?",
+        "answer": "Windows desktop with at least 8 GB of RAM and 3 GB of free disk space. A dedicated GPU is recommended for faster processing but not required."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Reviews Into Strategy?",
+    "subtitle": "Download TourlyAI for free and start uncovering the insights hidden in your guest reviews.",
+    "button": "Download TourlyAI",
+    "note": "Free & Open Source · Windows · No account required"
+  },
+  "footer": {
+    "description": "AI-powered review analysis for the tourism industry. Transform guest feedback into strategic insights.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "changelog": "Changelog",
+    "docs": "Documentation",
+    "github": "GitHub",
+    "contributing": "Contributing",
+    "license": "License",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with ❤️ for the tourism industry"
+  }
+}

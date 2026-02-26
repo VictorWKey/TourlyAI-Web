@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "dashboard": "Dashboard",
+    "privacy": "Privacidad",
+    "faq": "Preguntas",
+    "download": "Descargar"
+  },
+  "hero": {
+    "badge": "Análisis de Reseñas con IA",
+    "title1": "Convierte Reseñas En",
+    "titleHighlight": "Insights Estratégicos",
+    "subtitle": "La aplicación de escritorio inteligente que analiza reseñas turísticas usando IA — revelando sentimientos, tendencias y recomendaciones accionables para transformar tu negocio.",
+    "cta": "Descargar Gratis",
+    "ctaSecondary": "Ver Demo",
+    "stats": {
+      "reviews": "Reseñas Analizadas",
+      "categories": "Categorías Turísticas",
+      "languages": "Idiomas de Reseñas",
+      "phases": "Fases de Análisis"
+    }
+  },
+  "features": {
+    "label": "Funcionalidades",
+    "title": "Todo Lo Que Necesitas Para Entender Tus Reseñas",
+    "subtitle": "Desde reseñas sin procesar hasta reportes profesionales — TourlyAI maneja todo el proceso de análisis con un solo clic.",
+    "sentiment": {
+      "title": "Análisis de Sentimientos",
+      "description": "Clasifica automáticamente cada reseña como positiva, negativa o neutral. Entiende qué sienten realmente tus huéspedes sobre su experiencia."
+    },
+    "categories": {
+      "title": "Detección de Categorías",
+      "description": "Identifica de qué hablan los huéspedes — alojamiento, gastronomía, transporte, naturaleza, eventos y 7 categorías turísticas más."
+    },
+    "topics": {
+      "title": "Descubrimiento de Temas",
+      "description": "El modelado de temas con IA revela patrones ocultos y temas recurrentes en miles de reseñas."
+    },
+    "summaries": {
+      "title": "Resúmenes Inteligentes",
+      "description": "Obtén resúmenes estructurados generados por IA por categoría con hallazgos clave y conclusiones accionables."
+    },
+    "insights": {
+      "title": "Insights Estratégicos",
+      "description": "Recibe recomendaciones estratégicas basadas en datos con fortalezas para aprovechar y áreas de oportunidad para mejorar."
+    },
+    "reports": {
+      "title": "Reportes Profesionales",
+      "description": "Genera reportes PDF pulidos con 4 plantillas, 17 secciones personalizables y todos tus gráficos e insights incluidos."
+    },
+    "visualizations": {
+      "title": "Dashboard Interactivo",
+      "description": "Explora más de 34 tipos de gráficos incluyendo distribuciones de sentimientos, tendencias temporales, nubes de palabras, gráficos radar y análisis cruzados."
+    },
+    "reviews": {
+      "title": "Explorador de Reseñas",
+      "description": "Navega reseñas individuales con filtros poderosos por sentimiento, categoría, tema, subjetividad y calificación. Busca y ordena al instante."
+    }
+  },
+  "howItWorks": {
+    "label": "Proceso Simple",
+    "title": "De Datos a Decisiones en 3 Pasos",
+    "subtitle": "No se requiere conocimiento técnico. TourlyAI te guía a través de todo el proceso.",
+    "step1": {
+      "title": "Sube Tus Reseñas",
+      "description": "Arrastra y suelta un archivo CSV con tus reseñas. TourlyAI mapea automáticamente tus columnas y valida los datos."
+    },
+    "step2": {
+      "title": "Ejecuta el Análisis",
+      "description": "Haz clic en 'Ejecutar Todo' y observa cómo TourlyAI procesa tus datos a través de 9 fases de análisis — desde la limpieza hasta los insights estratégicos."
+    },
+    "step3": {
+      "title": "Explora y Exporta",
+      "description": "Navega dashboards interactivos, lee resúmenes con IA, explora reseñas individuales y genera reportes PDF profesionales."
+    }
+  },
+  "dashboard": {
+    "label": "Inteligencia Visual",
+    "title": "Un Dashboard Que Cuenta la Historia",
+    "subtitle": "Más de 34 tipos de gráficos interactivos transforman datos crudos en narrativas visuales claras y accionables.",
+    "charts": {
+      "sentiment": "Distribución de Sentimientos",
+      "temporal": "Tendencias Temporales",
+      "categories": "Análisis de Categorías",
+      "radar": "Radar 360°",
+      "wordcloud": "Nubes de Palabras",
+      "cross": "Análisis Cruzado"
+    }
+  },
+  "privacy": {
+    "label": "Tus Datos, Tus Reglas",
+    "title": "100% Privado. 100% Local.",
+    "subtitle": "TourlyAI se ejecuta completamente en tu computadora. Tus reseñas nunca salen de tu máquina — sin subidas a la nube, sin acceso de terceros, sin compartir datos.",
+    "features": {
+      "local": {
+        "title": "Procesamiento de IA Local",
+        "description": "Ejecuta modelos de IA potentes directamente en tu computadora usando Ollama. No se requiere internet después de la configuración."
+      },
+      "noCloud": {
+        "title": "Sin Nube Requerida",
+        "description": "Tus datos permanecen en tu disco duro. Nada se sube a servidores externos."
+      },
+      "flexible": {
+        "title": "Opciones de IA Flexibles",
+        "description": "Elige entre IA local (gratis y offline), API en la nube (más rápido), o análisis básico sin IA — tú tienes el control."
+      },
+      "open": {
+        "title": "Código Abierto y Transparente",
+        "description": "Licencia MIT. Revisa el código, verifica las garantías de privacidad y personaliza según tus necesidades."
+      }
+    }
+  },
+  "video": {
+    "label": "Míralo en Acción",
+    "title": "Mira Cómo TourlyAI Transforma Tus Reseñas",
+    "subtitle": "Un recorrido rápido mostrando cómo pasar de datos crudos de reseñas a insights estratégicos en minutos.",
+    "play": "Reproducir Video"
+  },
+  "faq": {
+    "label": "Preguntas Frecuentes",
+    "title": "Preguntas Frecuentes",
+    "items": {
+      "q1": {
+        "question": "¿Qué es TourlyAI?",
+        "answer": "TourlyAI es una aplicación de escritorio que utiliza Inteligencia Artificial y Procesamiento de Lenguaje Natural para analizar reseñas de destinos turísticos. Extrae sentimientos, identifica categorías y temas, genera resúmenes inteligentes y proporciona recomendaciones estratégicas."
+      },
+      "q2": {
+        "question": "¿Para quién está diseñado?",
+        "answer": "Profesionales del turismo, gerentes de hospitalidad, organizaciones de marketing de destinos, operadores turísticos, gerentes de hoteles y cualquier persona que necesite entender qué dicen los huéspedes sobre su experiencia turística."
+      },
+      "q3": {
+        "question": "¿Mis datos están seguros?",
+        "answer": "Absolutamente. TourlyAI procesa todo localmente en tu computadora. Tus reseñas nunca salen de tu máquina. Puedes usar el modo de IA local completamente offline para máxima privacidad."
+      },
+      "q4": {
+        "question": "¿Necesito conocimientos técnicos?",
+        "answer": "Para nada. TourlyAI incluye un asistente de configuración que maneja todo automáticamente. Solo sube tu archivo CSV, haz clic en 'Ejecutar Análisis' y explora los resultados."
+      },
+      "q5": {
+        "question": "¿Qué idiomas soporta?",
+        "answer": "La interfaz está disponible en inglés y español. El modelo de IA de sentimientos soporta reseñas en inglés, español, francés, alemán, italiano, portugués y más."
+      },
+      "q6": {
+        "question": "¿Es gratuito?",
+        "answer": "Sí, TourlyAI es gratuito y de código abierto bajo la licencia MIT. Puedes descargarlo, usarlo y modificarlo sin ningún costo."
+      },
+      "q7": {
+        "question": "¿Cuáles son los requisitos del sistema?",
+        "answer": "Escritorio con Windows con al menos 8 GB de RAM y 3 GB de espacio libre en disco. Se recomienda una GPU dedicada para procesamiento más rápido pero no es obligatoria."
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Listo Para Transformar Tus Reseñas en Estrategia?",
+    "subtitle": "Descarga TourlyAI gratis y comienza a descubrir los insights ocultos en las reseñas de tus huéspedes.",
+    "button": "Descargar TourlyAI",
+    "note": "Gratis y Código Abierto · Windows · Sin cuenta requerida"
+  },
+  "footer": {
+    "description": "Análisis de reseñas impulsado por IA para la industria turística. Transforma el feedback de huéspedes en insights estratégicos.",
+    "product": "Producto",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "changelog": "Registro de Cambios",
+    "docs": "Documentación",
+    "github": "GitHub",
+    "contributing": "Contribuir",
+    "license": "Licencia",
+    "privacy": "Política de Privacidad",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con ❤️ para la industria turística"
+  }
+}
