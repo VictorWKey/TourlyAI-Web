@@ -147,6 +147,10 @@
       "q7": {
         "question": "What are the system requirements?",
         "answer": "Windows desktop with at least 8 GB of RAM and 3 GB of free disk space. A dedicated GPU is recommended for faster processing but not required."
+      },
+      "q8": {
+        "question": "Why does Windows show a security warning when installing?",
+        "answer": "TourlyAI is not yet code-signed with a commercial certificate, so Windows may block it. The easiest fix: (1) Right-click the .exe → Properties. (2) Check the 'Unblock' checkbox at the bottom → Apply. Then open the file normally. If SmartScreen still appears, click 'More info' → 'Run anyway'. The app is 100% safe — the full source code is available on GitHub for anyone to review."
       }
     }
   },

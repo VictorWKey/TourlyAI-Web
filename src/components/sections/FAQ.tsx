@@ -4,7 +4,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 
-const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7'];
+const faqKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
 
 export default function FAQ() {
   const { t } = useTranslation();
