@@ -1,73 +1,146 @@
-# React + TypeScript + Vite
+# TourlyAI — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official marketing website for **TourlyAI**, an AI-powered desktop application that transforms tourism reviews into strategic insights. Built with React 19, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About TourlyAI
 
-## React Compiler
+TourlyAI is a free, open-source desktop application for tourism professionals. It analyzes CSV datasets of guest reviews through **9 analysis phases** — from basic processing to strategic recommendations — all running **100% locally** on your machine.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Stat | Value |
+| ---- | ----- |
+| Reviews analyzed | 10,000+ |
+| Tourism categories | 12 |
+| Review languages supported | 6 |
+| Analysis phases | 9 |
+| Chart types | 34+ |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Layer | Technology |
+| ----- | ---------- |
+| Framework | [React 19](https://react.dev) |
+| Language | TypeScript 5 |
+| Build tool | [Vite 7](https://vite.dev) |
+| Styling | [Tailwind CSS 4](https://tailwindcss.com) |
+| Animations | [Framer Motion](https://www.framer.com/motion/) |
+| Icons | [Lucide React](https://lucide.dev) |
+| i18n | [i18next](https://www.i18next.com) + react-i18next |
+| Routing | React Router DOM v7 |
+| Fonts | Inter Variable, JetBrains Mono Variable |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or later
+- npm / pnpm / yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-org/TourlyAI-Web.git
+cd TourlyAI-Web
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Available Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Script | Description |
+| ------ | ----------- |
+| `npm run dev` | Start the local development server with HMR |
+| `npm run build` | Type-check and build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint across all source files |
+
+---
+
+## Project Structure
+
+```text
+TourlyAI-Web/
+├── public/
+│   ├── images/          # Logos, screenshots, gallery assets
+│   └── video/           # Demo video
+└── src/
+    ├── components/
+    │   ├── sections/    # Page sections (Hero, Features, FAQ, …)
+    │   └── ui/          # Reusable UI primitives
+    ├── hooks/           # Custom React hooks (useTheme, useScrollAnimation, …)
+    ├── i18n/
+    │   ├── index.ts
+    │   └── locales/     # en.json, es.json
+    ├── lib/             # Utility helpers
+    ├── App.tsx
+    ├── main.tsx
+    └── index.css
 ```
+
+### Page Sections
+
+| Section | Description |
+| ------- | ----------- |
+| `Navbar` | Sticky navigation with theme toggle and language switcher |
+| `Hero` | Main headline, stats bar, and app screenshot |
+| `Features` | 8-card grid highlighting core analysis capabilities |
+| `HowItWorks` | 3-step illustrated walkthrough |
+| `Gallery` | Dashboard screenshot gallery with chart previews |
+| `VideoSection` | Embedded demo video |
+| `Privacy` | Local-first privacy guarantees |
+| `FAQ` | Accordion with 7 frequently asked questions |
+| `CTA` | Download call-to-action |
+| `Footer` | Links, social icons, and license notice |
+
+---
+
+## Internationalization
+
+The site is fully translated into **English** and **Spanish**. Translation files live in `src/i18n/locales/`. Language is auto-detected from the browser and can be switched at runtime via the navbar.
+
+To add a new language:
+
+1. Create `src/i18n/locales/<lang>.json` using `en.json` as a template.
+2. Register the locale in `src/i18n/index.ts`.
+
+---
+
+## Adding Screenshots & Assets
+
+Screenshots and images placed in `public/images/screenshots/` are served at `/images/screenshots/<filename>` and referenced directly in the section components. See [ASSETS.md](ASSETS.md) for the full list of expected filenames and capture guidelines.
+
+---
+
+## Building for Production
+
+Run the build command:
+
+```bash
+npm run build
+```
+
+Output is written to `dist/`. The site is fully static and can be deployed to any CDN or static hosting provider (GitHub Pages, Netlify, Vercel, etc.).
+
+---
+
+## Related
+
+- **[TourlyAI Desktop App](../TourlyAI/)** — The Electron + Python application this site promotes.
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](../TourlyAI/LICENSE) file for details.
