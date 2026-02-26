@@ -59,11 +59,6 @@ export default function Footer({ theme }: FooterProps) {
                 </a>
               </li>
               <li>
-                <a href="#dashboard" className="text-sm text-surface-500 dark:text-surface-400 hover:text-primary-500 transition-colors">
-                  {t('nav.dashboard')}
-                </a>
-              </li>
-              <li>
                 <a href="#privacy" className="text-sm text-surface-500 dark:text-surface-400 hover:text-primary-500 transition-colors">
                   {t('nav.privacy')}
                 </a>
