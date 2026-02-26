@@ -16,7 +16,7 @@
     "stats": {
       "reviews": "Reviews Analyzed",
       "categories": "Tourism Categories",
-      "languages": "Review Languages",
+      "languages": "Languages Supported",
       "phases": "Analysis Phases"
     }
   },

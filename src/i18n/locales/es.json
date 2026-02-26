@@ -16,7 +16,7 @@
     "stats": {
       "reviews": "Reseñas Analizadas",
       "categories": "Categorías Turísticas",
-      "languages": "Idiomas de Reseñas",
+      "languages": "Idiomas Soportados",
       "phases": "Fases de Análisis"
     }
   },

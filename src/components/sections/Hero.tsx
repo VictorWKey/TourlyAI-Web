@@ -11,7 +11,7 @@ interface HeroProps {
 const stats = [
   { icon: Star, valueKey: '10,000+', labelKey: 'hero.stats.reviews' },
   { icon: BarChart3, valueKey: '12', labelKey: 'hero.stats.categories' },
-  { icon: Languages, valueKey: '6', labelKey: 'hero.stats.languages' },
+  { icon: Languages, valueKey: '2', labelKey: 'hero.stats.languages' },
   { icon: Layers, valueKey: '9', labelKey: 'hero.stats.phases' },
 ];
 
