@@ -93,7 +93,7 @@ export default function Hero({ theme }: HeroProps) {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="https://github.com/victorwkey/TourlyAI/releases"
+                href="https://drive.google.com/file/d/1J4l4lg7lu2E5UG2vjO-T5oS9ogq34mNb/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-semibold text-white bg-linear-to-r from-primary-500 to-accent-500 rounded-2xl hover:from-primary-600 hover:to-accent-600 shadow-xl shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-300 hover:scale-105"

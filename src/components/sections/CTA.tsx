@@ -45,7 +45,7 @@ export default function CTA() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
               <a
-                href="https://github.com/victorwkey/TourlyAI/releases"
+                href="https://drive.google.com/file/d/1J4l4lg7lu2E5UG2vjO-T5oS9ogq34mNb/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2.5 px-8 py-4 text-base font-semibold text-primary-700 bg-white rounded-2xl shadow-xl shadow-black/20 hover:shadow-2xl hover:scale-105 transition-all duration-300"

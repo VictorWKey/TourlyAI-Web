@@ -92,7 +92,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 {theme === 'dark' ? <Sun className="w-[18px] h-[18px]" /> : <Moon className="w-[18px] h-[18px]" />}
               </button>
               <a
-                href="https://github.com/victorwkey/TourlyAI/releases"
+                href="https://drive.google.com/file/d/1J4l4lg7lu2E5UG2vjO-T5oS9ogq34mNb/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-linear-to-r from-primary-500 to-accent-500 rounded-xl hover:from-primary-600 hover:to-accent-600 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-300 hover:scale-105"
@@ -150,7 +150,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                   </button>
                 ))}
                 <a
-                  href="https://github.com/victorwkey/TourlyAI/releases"
+                  href="https://drive.google.com/file/d/1J4l4lg7lu2E5UG2vjO-T5oS9ogq34mNb/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 mt-3 w-full py-3 text-base font-semibold text-white bg-linear-to-r from-primary-500 to-accent-500 rounded-xl"
