@@ -138,7 +138,7 @@
       },
       "q5": {
         "question": "¿Qué idiomas soporta?",
-        "answer": "La interfaz está disponible en inglés y español. El modelo de IA de sentimientos soporta reseñas en inglés, español, francés, alemán, italiano, portugués y más."
+        "answer": "TourlyAI actualmente soporta inglés y español para todas las funciones, incluyendo la interfaz y todas las tareas de análisis de IA como análisis de sentimientos, clasificación de categorías, detección de subjetividad y análisis de temas."
       },
       "q6": {
         "question": "¿Es gratuito?",

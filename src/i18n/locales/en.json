@@ -138,7 +138,7 @@
       },
       "q5": {
         "question": "What languages does it support?",
-        "answer": "The interface is available in English and Spanish. The AI sentiment model supports reviews in English, Spanish, French, German, Italian, Portuguese, and more."
+        "answer": "TourlyAI currently supports English and Spanish for all features — including the interface and all AI analysis tasks such as sentiment analysis, category classification, subjectivity detection, and topic analysis."
       },
       "q6": {
         "question": "Is it free?",
